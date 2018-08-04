@@ -1,0 +1,197 @@
+/*General style of webpage*/
+html {
+  font-size: 16px;
+  background-color: rgb(248, 248, 248);
+  line-height: 1.4;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+}
+
+/*header containers positioning*/
+header {
+  width: 90%;
+  margin: auto;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*title & statement*/
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.9rem;
+  color: rgb(255, 192, 0);
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+}
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+  color: rgb(255, 192, 0);
+  line-height: 1.4;
+}
+#title {
+  position: relative;
+  top: 60px;
+  z-index: 1;
+}
+.size {
+  font-size: 1.6rem;
+}
+.statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.7;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+}
+.statement-text {
+    text-align: center;
+    opacity: 1;
+}
+/*profile*/
+.profile {
+  position: absolute;
+  top: 150px;
+}
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 15px solid rgb(255, 170, 0);
+  background-image: url("../../resources/images/profile-picture.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+/*profile text*/
+h3 {
+  font-family: 'Calligraffitti', cursive;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-left: 25px;
+}
+
+/*content*/
+.content {
+  display: block;
+}
+
+/*navigation years, when click, content changes*/
+nav {
+    padding-bottom: 10px;
+    display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  padding: 0rem 3rem;
+  color: black;
+}
+.years {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+/*book container and bookS container*/
+.book-container {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  border-radius: 14%;
+}
+.bookS {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+/*Each book styling*/
+.book {
+  padding-left: 15px;
+}
+
+.book-picture {
+
+
+}
+.book-picture img {
+  width: 180px;
+  height: auto;
+}
+/*text below book*/
+.bold {
+  font-weight: bold;
+}
+.padding {
+  padding-top: 10px
+}
+.star {
+  color: rgb(255, 170, 0);
+}
+.grey-star {
+  color: rgb(208, 206, 206);
+}
+
+@media only screen and (max-width: 480px)
+{
+  html {
+    font-size: 12px;
+    background-color: rgb(248, 248, 248);
+    line-height: 1.4;
+  }
+  .head {
+    display: block;
+  }
+  .profile {
+    position: relative;
+    top: -60px;
+}
+  .statement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+    max-width: 325px;
+    max-height: 325px;
+    border-radius: 100%;
+    margin-top: -30px;
+  }
+  #title {
+    position: relative;
+    top: 20px;
+    z-index: 1;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  nav {
+    margin-top: -18px;
+  }
+}
