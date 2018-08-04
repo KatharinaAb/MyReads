@@ -95,7 +95,7 @@ nav {
     display: flex;
 }
 
-nav a {
+a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
@@ -198,5 +198,14 @@ nav a {
   }
   nav {
     margin-top: -18px;
+    display: block;
+  }
+  a {
+    padding: 0rem 1rem;
+
+  }
+  .years {
+    display: block;
+    text-align: center;
   }
 };
