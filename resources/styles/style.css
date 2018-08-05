@@ -134,6 +134,9 @@ a {
 .book-picture img {
   width: 180px;
   height: auto;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
 }
 /*text below book*/
 .bold {
@@ -149,7 +152,7 @@ a {
   color: rgb(208, 206, 206);
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 640px){
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px){
   html {
     font-size: 12px;
     background-color: rgb(248, 248, 248);
@@ -160,23 +163,20 @@ a {
   }
   .profile {
     position: relative;
-    top: -60px;
+    top: -50px;
     text-align: center;
 }
   .profile-picture {
     margin: auto;
   }
   .statement {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.7;
     max-width: 325px;
     max-height: 325px;
     border-radius: 100%;
-    margin-top: -30px;
+    margin-top: 50px;
     margin: auto;
+    position: relative;
+    top: -10px;
   }
   #title {
     position: relative;
@@ -192,20 +192,22 @@ a {
   }
   h3 {
     font-size: 1.8rem;
+    padding-top: 15px;
+    margin-left: 0px;
   }
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   nav {
-    margin-top: -18px;
+    margin-top: -25px;
     display: block;
   }
   a {
     padding: 0rem 1rem;
-
   }
   .years {
     display: block;
     text-align: center;
   }
+
 };
