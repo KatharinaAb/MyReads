@@ -27,14 +27,14 @@ h1 {
 }
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   color: rgb(255, 192, 0);
   line-height: 1.4;
   letter-spacing: 0.05em;
 }
 h4 {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   color: rgb(255, 192, 0);
   line-height: 1.4;
 }
@@ -52,9 +52,10 @@ h4 {
   align-items: center;
   background-color: rgb(255, 255, 255);
   opacity: 0.7;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   border-radius: 100%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 .statement-text {
     text-align: center;
@@ -88,40 +89,48 @@ h3 {
 .content {
   display: block;
 }
-
-/*navigation years, when click, content changes*/
+.year {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+/*navigation years, when click, content changes
 nav {
     padding-bottom: 10px;
     display: flex;
+    margin-top: 90px;
+    justify-content: space-between;
 }
-
 a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   padding: 0rem 3rem;
   color: black;
+  text-align: center;
 }
-.years {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
-}
+*/
 /*book container and bookS container*/
 .book-container {
   margin: auto;
   width: 90%;
   height: auto;
-  border-radius: 14%;
+  position: relative;
+  top: 90px;
 }
 .bookS {
-  display: flex;
-  justify-content: center;
+
 }
 .padding {
-  padding-top: 30px;
+  padding-top: 50px;
+}
+.number {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.number h4 {
+  font-size: 1.425rem;
 }
 /*Each book styling*/
 .book {
@@ -129,17 +138,22 @@ a {
 }
 
 .book-picture {
-
-
+  text-align: center;
 }
 .book-picture img {
   width: 180px;
   height: auto;
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
-  border-right: 5px solid white;
 }
-/*text below book*/
+.current {
+  border-top: 5px solid rgb(255, 170, 0);
+  border-bottom: 5px solid rgb(255, 170, 0);
+  border-right: 5px solid rgb(255, 170, 0);
+  border-left: 5px solid rgb(255, 170, 0);
+}
+/*rating*/
+.rating {
+  padding-top: 10px;
+}
 .bold {
   font-weight: bold;
 }
@@ -149,7 +163,34 @@ a {
 .grey-star {
   color: rgb(208, 206, 206);
 }
-
+.rating-box {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.hide {
+  display: none;
+}
+/*contact*/
+.contact {
+  padding-bottom: 1rem;
+}
+i {
+  padding-right: 10px;
+}
+.contact h3 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 40px;
+}
+.icons {
+  margin-left: 40px;
+}
+/*footer*/
+.copyright {
+  font-family:'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+  text-align: right;
+}
 @media only screen and (min-width: 320px) and (max-width: 740px) {
   html {
     font-size: 12px;
@@ -163,7 +204,7 @@ a {
     position: relative;
     top: -50px;
     text-align: center;
-}
+  }
   .profile-picture {
     margin: auto;
   }
@@ -175,8 +216,6 @@ a {
     margin: auto;
     position: relative;
     top: -10px;
-  }
-
   }
   #title {
     position: relative;
@@ -196,21 +235,30 @@ a {
     margin-left: 0px;
   }
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
-  nav {
-    margin-top: -25px;
-    display: block;
-    padding-bottom: 0px;
+  .number h4 {
+    font-size: 1.9rem;
   }
-  a {
-    padding: 0rem 1rem;
+  .content {
+    position: relative;
+    top: -8.5rem;
   }
-  .years {
-    display: block;
-    text-align: center;
+  .year {
+    padding-bottom: 3rem;
+    margin-top: -1.5rem;
   }
   p {
     font-size: 1rem;
+  }
+  .padding {
+    padding-top: 1.2rem;
+  }
+  .contact {
+    padding-top: 30px;
+    padding-left: 25%;
+  }
+  .copyright {
+    text-align: center;
   }
 };

@@ -1,7 +1,5 @@
 $(document).ready(function(){
-  $().click(function(){
-  $(this).animate({
-
-  }
-  }
-}
+  $(img).click(function(){
+  $(".rating-box").fadeIn(3000);
+});
+});
