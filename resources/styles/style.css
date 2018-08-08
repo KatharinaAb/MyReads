@@ -119,9 +119,10 @@ a {
 .bookS {
   display: flex;
   justify-content: center;
+}
+.padding {
   padding-top: 30px;
 }
-
 /*Each book styling*/
 .book {
   padding-left: 15px;
@@ -142,9 +143,6 @@ a {
 .bold {
   font-weight: bold;
 }
-.padding {
-  padding-top: 10px
-}
 .star {
   color: rgb(255, 170, 0);
 }
@@ -152,7 +150,7 @@ a {
   color: rgb(208, 206, 206);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+@media only screen and (min-width: 320px) and (max-width: 740px) {
   html {
     font-size: 12px;
     background-color: rgb(248, 248, 248);
@@ -177,6 +175,8 @@ a {
     margin: auto;
     position: relative;
     top: -10px;
+  }
+
   }
   #title {
     position: relative;
